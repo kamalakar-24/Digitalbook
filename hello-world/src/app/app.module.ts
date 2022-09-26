@@ -4,21 +4,37 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsComponent } from './components/forms/forms.component';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
+import { SearchbookComponent } from './searchbook/searchbook.component';
+import { Route, RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
 
 
+const routes:Route []=[
+  {path:'search', component:SearchbookComponent},
+  {path:'signin', component:SigninComponent},
+  {path:'signup', component:SignupComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
-    FormsComponent
+   SignupComponent,
+   SigninComponent,
+   SearchbookComponent,
+   HeaderComponent,
+  
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    
+    HttpClientModule,RouterModule.forRoot(routes)
+    
+    
   
   ],
   providers: [],

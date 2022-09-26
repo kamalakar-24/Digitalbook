@@ -5,11 +5,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
-  BASE_URL ="http://localhost:5000/users"
-
-  createUser(user : {name: String, age : Number}){
-    return this.http.post(this.BASE_URL,user)
+  BASE_URL ="http://localhost:9090/api/auth/";
+  signup(user :any){
+    return this.http.post(this.BASE_URL+'signup',user);
   }
+
+
+  signin(user :any){
+    return this.http.post(this.BASE_URL+'signin',user);
+  }
+
 
   constructor(private http: HttpClient) { }
 }
