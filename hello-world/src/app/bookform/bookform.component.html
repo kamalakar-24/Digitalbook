@@ -1,0 +1,13 @@
+<h2>Book Form</h2>
+<form>
+    Title <input placeholder="title" [(ngModel)]='book.title'> <br> <br>
+    Author <input type="text" [(ngModel)]="book.author" placeholder="author"> <br>
+    Catagory : <input type="text" [(ngModel)]="book.catagory" name="Username"/> <br>
+    Content : <input type="text" [(ngModel)]="book.content" name="Username"/> <br>
+    Is_Blocked : <input type="text" [(ngModel)]="book.isBlocked" name="Username"/> <br>
+    Price : <input type="text" [(ngModel)]="book.price" name="Username"/> <br>
+    PublishedDate : <input type="text" [(ngModel)]="book.publishedDate" name="Username"/> <br>
+    Publisher : <input type="text" [(ngModel)]="book.publisher" name="Username"/> <br>
+    Active : <input type="text" [(ngModel)]="book.active" name="Username"/> <br>
+</form>
+<button (click)='save()'>save</button>

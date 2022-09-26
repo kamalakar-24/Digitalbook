@@ -10,12 +10,14 @@ import { SigninComponent } from './signin/signin.component';
 import { SearchbookComponent } from './searchbook/searchbook.component';
 import { Route, RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { BookformComponent } from './bookform/bookform.component';
 
 
 const routes:Route []=[
   {path:'search', component:SearchbookComponent},
   {path:'signin', component:SigninComponent},
-  {path:'signup', component:SignupComponent}
+  {path:'signup', component:SignupComponent},
+  {path:'bookform', component:BookformComponent}
 ];
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ const routes:Route []=[
    SigninComponent,
    SearchbookComponent,
    HeaderComponent,
+   BookformComponent,
   
    
   ],
