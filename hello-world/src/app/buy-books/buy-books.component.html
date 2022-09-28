@@ -1,0 +1,17 @@
+<p>BuyBooks</p>
+<form name="buyBooks" class="buyBooks">
+ 
+<div class="buyBookscontainer">
+    
+    <label for="uname"><b>UserName</b></label>     
+    <input type="text" [(ngModel)]="book.username" name="username" class="name"/> <br>
+
+    <label for="bookId"><b>BookId</b></label> 
+    <input type="text" [(ngModel)]="book.bookId"  name="bookId" class="bookId"/> <br>
+
+    <label for="email"><b>Email</b></label> 
+    <input type="text" [(ngModel)]="book.email" name="email" class="email"/> <br>
+
+    <button class='btn btn-primary' (click)="buyBooks()">Submit</button>
+
+</div>

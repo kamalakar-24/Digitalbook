@@ -1,0 +1,11 @@
+<p>update-book works!</p>
+<form>
+    BookId <input type="text" [(ngModel)]='book.bookId'name="bookId"> <br>
+    Title <input type="text" [(ngModel)]='book.title'name="title"> <br> 
+    Catagory : <input type="text" [(ngModel)]="book.catagory" name="catagory"> <br>
+    Is_Blocked : <input type="text" [(ngModel)]="book.isBlocked" name="isBlocked"> <br>
+    Price : <input type="text" [(ngModel)]="book.price" name="price"> <br>
+    Publisher : <input type="text" [(ngModel)]="book.publisher" name="publisher"> <br>
+    Active : <input type="text" [(ngModel)]="book.active" name="active"> <br>
+</form>
+<button (click)='updateBook()'>update</button>

@@ -1,0 +1,20 @@
+<p>BuyBooks</p>
+<form name="buyBooks" class="buyBooks">
+ 
+<div class="refundcontainer">
+    
+    <label for="bookId"><b>BookId</b></label>     
+    <input type="text" [(ngModel)]="book.bookId" name="bookId" class="bookId"/> <br>
+
+    <label for="paymentId"><b>PaymentId</b></label> 
+    <input type="text" [(ngModel)]="book.paymentId"  name="paymentId" class="paymentId"/> <br>
+
+    <label for="email"><b>Email</b></label> 
+    <input type="text" [(ngModel)]="book.email" name="email" class="email"/> <br>
+
+    <label for="refundAmount"><b>RefundAmount</b></label> 
+    <input type="text" [(ngModel)]="book.refundAmount" name="refundAmount" class="refundAmount"/> <br>
+
+    <button class='btn btn-primary' (click)="refund()">Submit</button>
+
+</div>
