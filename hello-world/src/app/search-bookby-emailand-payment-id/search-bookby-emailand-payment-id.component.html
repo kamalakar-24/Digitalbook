@@ -1,0 +1,13 @@
+<head>
+
+    <link rel="stylesheet" href="search-bookby-emailand-payment-id.component.css" type="text/css">
+
+</head>
+<form>
+    <label>Email</label>
+     <input type="text" [(ngModel)]='book.email'name="email"> <br>
+    <label>PaymentId</label>
+     <input type="text" [(ngModel)]='book.paymentId'name="paymentId"> <br> 
+    
+</form>
+<button class= 'btn btn-primary' type="button" (click)="save()">Submit</button>

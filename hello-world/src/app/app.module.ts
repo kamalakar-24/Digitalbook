@@ -14,6 +14,10 @@ import { BookformComponent } from './bookform/bookform.component';
 import { UpdateBookComponent } from './update-book/update-book.component';
 import { BuyBooksComponent } from './buy-books/buy-books.component';
 import { RefundComponent } from './refund/refund.component';
+import { AllPurchasedBooksbyEmailComponent } from './all-purchased-booksby-email/all-purchased-booksby-email.component';
+import { SearchBookbyMailAndBookIdComponent } from './search-bookby-mail-and-book-id/search-bookby-mail-and-book-id.component';
+import { SearchBookbyEmailandPaymentIdComponent } from './search-bookby-emailand-payment-id/search-bookby-emailand-payment-id.component';
+
 
 
 const routes:Route []=[
@@ -24,7 +28,10 @@ const routes:Route []=[
   {path:'updateBook', component:UpdateBookComponent},
   {path:'searchBook', component:SearchbookComponent},
   {path:'buyBooks', component:BuyBooksComponent},
-  {path:'refund', component:RefundComponent}
+  {path:'refund', component:RefundComponent},
+  {path:'allPurchasedBooks', component:AllPurchasedBooksbyEmailComponent},
+  {path:'searchBookbyMailAndBookId', component:SearchBookbyMailAndBookIdComponent},
+  {path:'searchBookbyEmailandPaymentId', component:SearchBookbyEmailandPaymentIdComponent}
 ];
 @NgModule({
   declarations: [
@@ -37,6 +44,10 @@ const routes:Route []=[
    UpdateBookComponent,
    BuyBooksComponent,
    RefundComponent,
+   AllPurchasedBooksbyEmailComponent,
+   SearchBookbyMailAndBookIdComponent,
+   SearchBookbyEmailandPaymentIdComponent,
+   
   ],
   imports: [
     BrowserModule,
