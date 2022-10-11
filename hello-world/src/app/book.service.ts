@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class BookService {
-  BASE_URL ="http://localhost:9090/api/book/";
+  BASE_URL ="http://54.147.61.125:9090/api/book/";
+ // BASE_URL ="http://localhost:9090/api/book/";
   saveBook(book: { title: string; }) {
     const credentials = sessionStorage.getItem('credentials');
     const token: any = JSON.parse(credentials||'{}')['accessToken'];

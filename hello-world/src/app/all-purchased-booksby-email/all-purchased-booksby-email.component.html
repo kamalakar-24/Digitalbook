@@ -3,10 +3,16 @@
     <link rel="stylesheet" href="all-purchased-booksby-email.component.css" type="text/css">
 
 </head>
-<div>
-    <label>email</label>     
-    <input type="text" [(ngModel)]="book.email" name="email" class="email"/> <br>
 
-    <button class='btn btn-primary' (click)="save()">Submit</button>
+<body class="container">
+    <div>
+        <form>
+            <label>email</label>
+            <input type="text" [(ngModel)]="book.email" name="email" class="email" /> <br>
 
-</div>
+            <button class='btn btn-info' (click)="save()">Submit</button>
+
+
+        </form>
+    </div>
+</body>

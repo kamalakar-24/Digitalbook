@@ -11,10 +11,23 @@ export class BuyBooksComponent implements OnInit {
 book={
   username:"kamalakar",
   email:"tkr@gmail.com",
-  bookId:'1'
+  bookId:"1"
 }
 
 buyBooks(){
+  if(this.book.username=="")
+  {
+    alert("Please enter username")
+  }
+  else if(this.book.email=="")
+  {
+    alert("Please Enter email")
+  }
+  else if(this.book.bookId=="")
+  {
+    alert("Please Enter bookId")
+  }
+  else{
   const observable: Observable<any>=this.bookService.buyBooks(this.book);
   observable.subscribe(
     responce=>{   //success function
@@ -25,6 +38,7 @@ buyBooks(){
     }
     
   )
+  }
 }
   constructor(private bookService :BookService) { }
 

@@ -15,6 +15,23 @@ book={
   refundAmount:'999'
 }
 refund(){
+  if(this.book.bookId=="")
+  {
+    alert("Please enter bookId")
+  }
+  else if(this.book.paymentId=="")
+  {
+    alert("Please Enter paymentId")
+  }
+  else if(this.book.email=="")
+  {
+    alert("Please Enter email")
+  }
+  else if(this.book.refundAmount=="")
+  {
+    alert("Please Enter refundAmount")
+  }
+  else{
   const observable:Observable<any>= this.bookService.refund(this.book);
   observable.subscribe(
     responce=>{
@@ -24,6 +41,7 @@ refund(){
       console.log(error);
     }
   )
+  }
 }
   constructor(private bookService : BookService) { }
 

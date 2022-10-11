@@ -1,17 +1,23 @@
-<p>BuyBooks</p>
-<form name="buyBooks" class="buyBooks">
- 
-<div class="buyBookscontainer">
-    
-    <label for="uname"><b>UserName</b></label>     
-    <input type="text" [(ngModel)]="book.username" name="username" class="name"/> <br>
+<head>
 
-    <label for="bookId"><b>BookId</b></label> 
-    <input type="text" [(ngModel)]="book.bookId"  name="bookId" class="bookId"/> <br>
+    <link rel="stylesheet" href="buy-books.component.css" type="text/css">
 
-    <label for="email"><b>Email</b></label> 
-    <input type="text" [(ngModel)]="book.email" name="email" class="email"/> <br>
+</head>
 
-    <button class='btn btn-primary' (click)="buyBooks()">Submit</button>
+<body class="container">
+    <div>
+        <form>
 
-</div>
+            <label>UserName</label>
+            <input type="text" [(ngModel)]="book.username" name="username" class="name" /> <br>
+
+            <label>bookId</label>
+            <input type="text" [(ngModel)]="book.bookId" name="bookId" class="bookId" /> <br>
+
+            <label>email</label>
+            <input type="text" [(ngModel)]="book.email" name="email" class="email" /> <br>
+
+            <button class='btn btn-primary' (click)="buyBooks()">Submit</button>
+        </form>
+    </div>
+</body>
